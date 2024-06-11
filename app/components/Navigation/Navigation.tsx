@@ -12,15 +12,15 @@ const Navigation = () => {
             <div className="flex-1 flex gap-4">
                 <div className="avatar">
                     <div className="w-10 rounded-full">
-                        <Image alt="Rishav profile picture" src={imgSrc} width={100} height={100} />
+                        <Image alt="Rishav profile picture" src={imgSrc} width={100} height={100} priority={true} />
                     </div>
                 </div>
                 <a className="text-xl">Rishav Roy</a>
             </div>
             <div className="flex-none gap-2">
+                <AboutTab />
                 <ExperienceTab />
                 <ProjectsTab />
-                <AboutTab />
                 <ContactTab />
                 <HomeTab />
             </div>
