@@ -25,7 +25,7 @@ export default function Home() {
       </div>
       <div className={styles.summary + ' text-xl font-light'}>
         <p className={styles.summaryText}>
-          I'm a full-stack web developer with a knack for turning complex problems into sleek, scalable solutions. Currently, I'm diving deep into the world of Computer Science at <span className='font-semibold'>New York University</span>, working towards my <span className='font-semibold'>Master of Science</span> with a focus on <span className='font-semibold'>Data Science, Machine Learning, Distributed Systems, and System Design</span>.
+          I'm a <span className='font-semibold'>full-stack developer</span> navigating my way through the world of AI/ML with a passion for turning complex problems into sleek, scalable and deployable solutions. Currently, I'm diving deep into the world of <span className='font-semibold'>Computer Vision and Machine Learning</span> at <span className='font-semibold'>New York University</span>, working towards my Master's in Computer Science (MS in CS).
         </p>
 
         <p className={styles.summaryText}>

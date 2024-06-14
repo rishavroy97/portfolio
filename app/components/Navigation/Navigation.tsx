@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import imgSrc from "../../../public/rishav.jpg";
 import AboutTab from "./AboutTab";
 import ContactTab from "./ContactTab";
@@ -11,12 +12,16 @@ const Navigation = () => {
     return (
         <div className="navbar bg-base-300 justify-between rounded-md px-4 w-[60vw]">
             <div className="flex-1 flex gap-4">
-                <div className="avatar">
-                    <div className="w-10 rounded-full">
-                        <Image alt="Rishav profile picture" src={imgSrc} width={100} height={100} priority={true} />
+                <Link href={"/"}>
+                    <div className="btn btn-ghost btn-circle avatar">
+                        <div className="w-10 rounded-full">
+                            <Image alt="Rishav profile picture" src={imgSrc} width={100} height={100} priority={true} />
+                        </div>
                     </div>
-                </div>
-                <a className="text-xl">Rishav Roy</a>
+                </Link>
+                <span className="text-xl btn btn-ghost">
+                    <Link href={"/"}>Rishav Roy</Link>
+                </span>
             </div>
             <div className={styles.navtabs + " flex-none gap-2"}>
                 <AboutTab />

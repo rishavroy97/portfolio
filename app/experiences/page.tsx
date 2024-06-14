@@ -1,4 +1,4 @@
-import styles from './Experience.module.css';
+import styles from './Experiences.module.css';
 
 const Experience = () => {
   return (
@@ -6,7 +6,7 @@ const Experience = () => {
       <div className={styles.experience}>
         <div className={styles.caption}>
           <h4 className="text-xl">Explore my</h4>
-          <h1 className="text-6xl text-primary font-extrabold pb-4">Experience</h1>
+          <h1 className="text-6xl text-primary font-extrabold pb-4">Experiences</h1>
         </div>
         <div className={styles.content + ' text-xl font-light'}>
           <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
