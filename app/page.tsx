@@ -25,7 +25,7 @@ export default function Home() {
       </div>
       <div className={styles.summary + ' text-xl font-light'}>
         <p className={styles.summaryText}>
-          I'm a <span className='font-semibold'>full-stack developer</span> navigating my way through the world of AI/ML with a passion for turning complex problems into sleek, scalable and deployable solutions. Currently, I'm diving deep into the world of <span className='font-semibold'>Computer Vision and Machine Learning</span> at <span className='font-semibold'>New York University</span>, working towards my Master's in Computer Science (MS in CS).
+          I&apos;m a <span className='font-semibold'>full-stack developer</span> navigating my way through the world of AI/ML with a passion for turning complex problems into sleek, scalable and deployable solutions. Currently, I&apos;m diving deep into the world of <span className='font-semibold'>Computer Vision and Machine Learning</span> at <span className='font-semibold'>New York University</span>, working towards my Master&apos;s in Computer Science (MS in CS).
         </p>
 
         <p className={styles.summaryText}>
@@ -33,7 +33,7 @@ export default function Home() {
         </p>
 
         <p className={styles.summaryText}>
-          Now, I'm on the lookout for internship/full-time opportunities where I can roll up my sleeves, get my hands dirty, and bring some magic to innovative projects. If you're looking for someone who loves to code, talk about music, and occasionally (read: frequently) make changes to their Fantasy Football team, let's <Link href={"/contact"} role='button' className='font-bold hover:bg-base-300 hover:p-2 hover:rounded-xl'>connect!</Link>
+          Now, I&apos;m on the lookout for internship/full-time opportunities where I can roll up my sleeves, get my hands dirty, and bring some magic to innovative projects. If you&apos;re looking for someone who loves to code, talk about music, and occasionally (read: frequently) make changes to their Fantasy Football team, let&apos;s <Link href={"/contact"} role='button' className='font-bold hover:bg-base-300 hover:p-2 hover:rounded-xl'>connect!</Link>
         </p>
       </div>
     </div>
