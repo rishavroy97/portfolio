@@ -19,7 +19,8 @@ const config: Config = {
     require('daisyui'),
   ],
   daisyui: {
-    themes: ["synthwave", "garden"],
+    themes: ["synthwave", "valentine"],
   },
+  darkMode: ['class', '[data-theme="synthwave"]']
 };
 export default config;
