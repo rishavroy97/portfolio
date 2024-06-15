@@ -1,5 +1,8 @@
 import Link from "next/link"
 
+const date = new Date();
+const year = date.getFullYear();
+
 const Footer = () => {
     return (
         <footer className="border-t-2 w-[60vw] flex justify-center p-4 mr-8 pt-8 border-slate-400">
@@ -29,7 +32,7 @@ const Footer = () => {
                     </a>
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                    <h3 className="text-slate-500">Copyright © 2024 Rishav Roy</h3>
+                    <h3 className="text-slate-500">Copyright © {year} Rishav Roy</h3>
                     <h3 className="text-slate-500">All Rights Reserved</h3>
                 </div>
             </div>
