@@ -1,11 +1,18 @@
-import React from 'react'
+import PinnedRepos from '../components/PinnedRepos';
+import styles from "./Projects.module.css";
 
-const Projects = () => {
+export default function Projects() {
   return (
-    <div>
-      Projects
-    </div>
-  )
+    <>
+      <div className={styles.projects}>
+        <div className={styles.caption}>
+          <h4 className="text-xl">Dive into</h4>
+          <h1 className="text-6xl text-primary font-extrabold pb-4">My Work</h1>
+        </div>
+        <div className={styles.content + " text-xl font-light"}>
+          <PinnedRepos />
+        </div>
+      </div>
+    </>
+  );
 }
-
-export default Projects
