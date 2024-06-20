@@ -1,15 +1,14 @@
 import PinnedRepos from '../components/PinnedRepos';
-import styles from "./Projects.module.css";
 
 export default function Projects() {
   return (
     <>
-      <div className={styles.projects}>
-        <div className={styles.caption}>
-          <h4 className="text-xl">Dive into</h4>
-          <h1 className="text-6xl text-primary font-extrabold pb-4">My Work</h1>
+      <div className="flex flex-col justify-center items-center gap-16 py-12 w-[90vw] lg:w-[60vw]">
+        <div className="flex flex-col justify-center items-center gap-2 w-[90vw] lg:w-[60vw] lg:px-16">
+          <h4 className="text-xl">Dive into my most recent</h4>
+          <h1 className="text-6xl text-primary font-extrabold pb-4">Projects</h1>
         </div>
-        <div className={styles.content + " text-xl font-light"}>
+        <div className="flex flex-col justify-center items-center gap-8 w-[90vw] lg:w-[60vw] text-xl font-light px-4 lg:px-16">
           <PinnedRepos />
         </div>
       </div>

@@ -1,14 +1,13 @@
-import styles from "./Experiences.module.css";
 
 const Experience = () => {
   return (
     <>
-      <div className={styles.experience}>
-        <div className={styles.caption}>
-          <h4 className="text-xl">Explore my</h4>
-          <h1 className="text-6xl text-primary font-extrabold pb-4">Experiences</h1>
+      <div className="flex flex-col justify-center items-center gap-16 py-12 w-[90vw] lg:w-[60vw]">
+        <div className="flex flex-col justify-center items-center gap-2 w-[90vw] lg:w-[60vw] lg:px-16">
+          <h4 className="text-xl">Look through my</h4>
+          <h1 className="text-5xl lg:text-6xl text-primary font-extrabold pb-4">Experiences</h1>
         </div>
-        <div className={styles.content + " text-xl font-light"}>
+        <div className="flex flex-col justify-center items-center gap-8 w-[90vw] lg:w-[60vw] text-xl font-light px-4 lg:px-16">
           <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
             <li>
               <hr />
@@ -17,11 +16,11 @@ const Experience = () => {
                   <path d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM127 281c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l71 71L232 136c0-13.3 10.7-24 24-24s24 10.7 24 24l0 182.1 71-71c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 393c-9.4 9.4-24.6 9.4-33.9 0L127 281z" />
                 </svg>
               </div>
-              <div className="timeline-start md:text-end mb-10 font-light text-lg">
+              <div className="timeline-end md:timeline-start md:text-end mb-10 font-light text-lg">
                 <time className="italic">Sept 2023 - May 2025</time>
                 <div className="text-lg font-black">New York University</div>
                 <div className="text-base font-medium">Master of Science, Computer Science</div>
-                <div className="text-base flex gap-2 justify-end items-center pb-2">
+                <div className="text-base flex gap-2 md:justify-end items-center pb-2">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentColor" stroke="currentColor" className="h-3 w-3">
                     <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
                   </svg>
@@ -88,7 +87,7 @@ const Experience = () => {
                   <path d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM127 281c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l71 71L232 136c0-13.3 10.7-24 24-24s24 10.7 24 24l0 182.1 71-71c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 393c-9.4 9.4-24.6 9.4-33.9 0L127 281z" />
                 </svg>
               </div>
-              <div className="timeline-start md:text-end mb-10 font-light text-lg">
+              <div className="timeline-end md:timeline-start md:text-end mb-10 font-light text-lg">
                 <time className="italic">July 2016 - May 2020</time>
                 <div className="text-lg font-black">National Institute of Technology - Tiruchirappalli</div>
                 <div className="text-base font-medium">B.Tech, Computer Science and Engineering</div>

@@ -49,7 +49,7 @@ const PinnedRepos = async () => {
             }));
 
         return (
-            <ul className="grid grid-cols-2 gap-8">
+            <ul className="grid grid-cols-1 2xl:grid-cols-2 gap-8">
                 {data.map((repo: any) => (
                     <li key={repo.id}>
                         <RepoCard repo={repo} />

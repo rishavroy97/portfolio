@@ -2,28 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 90%;
-}
-
-@media (max-width: 1024px) {
-  main {
-    width: 100vw;
-  }
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
