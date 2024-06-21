@@ -5,10 +5,10 @@ const year = date.getFullYear();
 
 const Footer = () => {
     return (
-        <div className="flex justify-center items-center">
-            <footer className="border-t-2 w-[80vw] lg:w-[70vw] flex justify-center p-4 pt-8 border-base-content">
+        <div className="flex justify-center items-center mt-12">
+            <footer className="border-t-2 w-[90vw] lg:w-[60vw] flex justify-center p-4 pt-8 border-base-content">
                 <div className="flex flex-col items-center gap-12 lg:gap-6">
-                    <ul className="flex flex-col lg:flex-row gap-6">
+                    <ul className="flex flex-col lg:flex-row gap-6 justify-center items-center">
                         <li className="flex-1 border-b-2 border-base-100 hover:border-base-content dark:hover:border-base-content opacity-75 hover:opacity-100"><Link href="/about">About</Link></li>
                         <li className="flex-1 border-b-2 border-base-100 hover:border-base-content dark:hover:border-base-content opacity-75 hover:opacity-100"><Link href="/experiences">Experiences</Link></li>
                         <li className="flex-1 border-b-2 border-base-100 hover:border-base-content dark:hover:border-base-content opacity-75 hover:opacity-100"><Link href="/projects">Projects</Link></li>

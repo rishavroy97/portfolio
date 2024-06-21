@@ -8,8 +8,9 @@ const RepoCard = ({ repo }: { repo: any }) => {
         <div className="card w-56 h-256 lg:w-96 bg-base-100 shadow-xl dark:bg-primary dark:text-base-100 dark:shadow-neutral-500 dark:shadow-md">
             <figure>
                 {repo.stack.includes('Python') ?
-                    <Image src={ai} alt="AI" quality={50} /> : (repo.stack.includes('C++') ?
-                        <Image src={cms} alt="Compilers" quality={50} /> : <Image src={htmlCode} alt="Full-stack" quality={50} />
+                    <Image src={ai} alt="AI" quality={50} height={320} /> : (repo.stack.includes('C++') ?
+                        <Image src={cms} alt="Compilers" quality={50} height={320} /> :
+                        <Image src={htmlCode} alt="Full-stack" quality={50} height={320} />
                     )}
             </figure>
             <div className="card-body flex flex-col gap-4">

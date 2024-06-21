@@ -19,7 +19,7 @@ export default function Home() {
           </p>
         </div>
         <div className="flex-1 flex justify-center items-center">
-          <Image src={img} alt='Profile Picture' className='rounded-full dark:shadow-md dark:shadow-accent-content' width={350} />
+          <Image src={img} alt='Profile Picture' className='mask mask-circle' width={350} />
         </div>
       </div>
       <div className="flex flex-col justify-center items-center gap-8 w-[90vw] lg:w-[60vw] text-xl font-light px-4 lg:px-16">
