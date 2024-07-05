@@ -2,9 +2,9 @@ import Link from "next/link";
 
 const AboutTab = () => {
     return (
-        <span className="btn btn-ghost">
-            <Link href="/about">About</Link>
-        </span>
+        <Link href="/about">
+            <span className="btn btn-ghost">About</span>
+        </Link>
     );
 }
 

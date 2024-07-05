@@ -1,4 +1,4 @@
-import Skills from "./Skills"
+import Skills from "@/app/ui/About/Skills"
 
 const About = () => {
   return (

@@ -1,47 +1,47 @@
 // Programming Languages
-import cpp from "../../public/icons/c.png";
-import html from "../../public/icons/html.png";
-import java from "../../public/icons/java.png";
-import js from "../../public/icons/js.png";
-import python from "../../public/icons/python.png";
-import ts from "../../public/icons/typescript.png";
+import cpp from "@/public/icons/c.png";
+import html from "@/public/icons/html.png";
+import java from "@/public/icons/java.png";
+import js from "@/public/icons/js.png";
+import python from "@/public/icons/python.png";
+import ts from "@/public/icons/typescript.png";
 
 // Frameworks
-import angular from "../../public/icons/angular.svg";
-import bootstrap from "../../public/icons/bootstrap.svg";
-import css from "../../public/icons/css.png";
-import django from "../../public/icons/django.svg";
-import flask from "../../public/icons/flask.webp";
-import huggingFace from '../../public/icons/huggingface.svg';
-import langchainDark from "../../public/icons/LangChain.avif";
-import langchain from "../../public/icons/LangChain.png";
-import matplotlib from "../../public/icons/matplotlib.svg";
-import maven from "../../public/icons/maven.ico";
-import nextjs from "../../public/icons/next-js.avif";
-import ngrx from "../../public/icons/ngrx.svg";
-import nodejs from "../../public/icons/nodejs.svg";
-import numpy from "../../public/icons/numpy.svg";
-import react from "../../public/icons/react.svg";
-import sass from "../../public/icons/sass.svg";
-import sklearn from "../../public/icons/sklearn.ico";
-import spring from "../../public/icons/spring.svg";
-import tailwind from "../../public/icons/tailwindcss.svg";
+import angular from "@/public/icons/angular.svg";
+import bootstrap from "@/public/icons/bootstrap.svg";
+import css from "@/public/icons/css.png";
+import django from "@/public/icons/django.svg";
+import flask from "@/public/icons/flask.webp";
+import graphql from "@/public/icons/graphQL.png";
+import huggingFace from '@/public/icons/huggingface.svg';
+import langchainDark from "@/public/icons/LangChain.avif";
+import langchain from "@/public/icons/LangChain.png";
+import matplotlib from "@/public/icons/matplotlib.svg";
+import nextjs from "@/public/icons/next-js.avif";
+import ngrx from "@/public/icons/ngrx.svg";
+import nodejs from "@/public/icons/nodejs.svg";
+import numpy from "@/public/icons/numpy.svg";
+import react from "@/public/icons/react.svg";
+import sass from "@/public/icons/sass.svg";
+import sklearn from "@/public/icons/sklearn.ico";
+import spring from "@/public/icons/spring.svg";
+import tailwind from "@/public/icons/tailwindcss.svg";
 
 
 // Tools
-import bash from "../../public/icons/bash.png";
-import docker from "../../public/icons/docker.webp";
-import git from "../../public/icons/git.svg";
-import jenkins from "../../public/icons/jenkins.ico";
-import jira from "../../public/icons/jira.svg";
-import linux from "../../public/icons/linux.png";
+import bash from "@/public/icons/bash.png";
+import docker from "@/public/icons/docker.webp";
+import git from "@/public/icons/git.svg";
+import jenkins from "@/public/icons/jenkins.ico";
+import jira from "@/public/icons/jira.svg";
+import linux from "@/public/icons/linux.png";
 
 
 // Databases
-import mongo from "../../public/icons/mongodb.svg";
-import mysql from "../../public/icons/mysql.png";
-import pandas from "../../public/icons/pandas.svg";
-import postgres from "../../public/icons/postgresql.svg";
+import mongo from "@/public/icons/mongodb.svg";
+import mysql from "@/public/icons/mysql.png";
+import pandas from "@/public/icons/pandas.svg";
+import postgres from "@/public/icons/postgresql.svg";
 
 
 export const languages = [{
@@ -116,22 +116,22 @@ export const frameworks = [{
     img: django
 }, {
     id: 12,
-    value: "Maven",
-    img: maven
-}, {
-    id: 13,
     value: "Spring",
     img: spring
 }, {
-    id: 14,
+    id: 13,
+    value: "GraphQL",
+    img: graphql
+}, {
+    id: 13,
     value: "Numpy",
     img: numpy
 }, {
-    id: 15,
+    id: 14,
     value: "Matplotlib",
     img: matplotlib
 }, {
-    id: 16,
+    id: 15,
     value: "Scikit-Learn",
     img: sklearn
 }, {

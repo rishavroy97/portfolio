@@ -1,4 +1,4 @@
-import PinnedRepos from '../components/PinnedRepos';
+import PinnedRepos from '@/app/ui/Projects/PinnedRepos';
 
 export default function Projects() {
   return (

@@ -1,5 +1,5 @@
 import { Octokit } from "octokit";
-import RepoCard from "./RepoCard";
+import RepoCard from "@/app/ui/Projects/RepoCard";
 
 const octokit = new Octokit({
     auth: process.env.GITHUB_TOKEN

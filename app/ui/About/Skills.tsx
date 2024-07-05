@@ -1,4 +1,4 @@
-import { databases, frameworks, languages, tools } from "./data";
+import { databases, frameworks, languages, tools } from "@/app/lib/skills";
 import SkillCard from "./SkillCard";
 
 const Skills = () => {

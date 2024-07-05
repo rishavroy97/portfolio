@@ -1,7 +1,7 @@
 import Image from "next/image";
-import ai from "../../public/projects/ai.jpg";
-import cms from "../../public/projects/cms.jpg";
-import htmlCode from "../../public/projects/html-code.jpg";
+import ai from "@/public/projects/ai.jpg";
+import cms from "@/public/projects/cms.jpg";
+import htmlCode from "@/public/projects/html-code.jpg";
 
 const RepoCard = ({ repo }: { repo: any }) => {
     return (
