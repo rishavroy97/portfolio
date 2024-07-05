@@ -1,8 +1,5 @@
-import AboutTab from "./AboutTab";
-import ContactTab from "./ContactTab";
-import ExperienceTab from "./ExperienceTab";
-import HomeTab from "./HomeTab";
-import ProjectsTab from "./ProjectsTab";
+import { navlinks } from "@/app/lib/navlinks"
+import Link from "next/link"
 
 const DropdownMenu = () => {
     return (
@@ -13,11 +10,17 @@ const DropdownMenu = () => {
                 </svg>
             </div>
             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-300 rounded-box w-52">
-                <li><AboutTab /></li>
-                <li><ExperienceTab /></li>
-                <li><ProjectsTab /></li>
-                <li><ContactTab /></li>
-                <li><HomeTab /></li>
+                {
+                    navlinks.map(link => (
+                        <li key={link.id} className="py-2">
+                            <Link href={link.href}>
+                                <span className="text-xl">
+                                    {link.name}
+                                </span>
+                            </Link>
+                        </li>
+                    ))
+                }
             </ul>
         </div>
     )

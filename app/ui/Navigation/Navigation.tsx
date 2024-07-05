@@ -18,7 +18,7 @@ const Navigation = () => {
                 <ToggleTheme />
             </header>
 
-            <header className="navbar bg-base-300 justify-center rounded-md w-[90vw] lg:hidden">
+            <header className="navbar bg-base-300 justify-center gap-1 sm:gap-2 md:gap-4 rounded-md w-[90vw] lg:hidden">
                 <TinyImg />
                 <Name />
                 <DropdownMenu />

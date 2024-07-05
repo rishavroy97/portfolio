@@ -1,19 +1,30 @@
+'use client';
+
+import clsx from "clsx";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { navlinks } from "../lib/navlinks";
 
 const date = new Date();
 const year = date.getFullYear();
 
 const Footer = () => {
+    const pathname = usePathname();
     return (
         <div className="flex justify-center items-center mt-12">
             <footer className="border-t-2 w-[90vw] lg:w-[60vw] flex justify-center p-4 pt-8 border-base-content">
                 <div className="flex flex-col items-center gap-12 lg:gap-6">
                     <ul className="flex flex-col lg:flex-row gap-6 justify-center items-center">
-                        <li className="flex-1 border-b-2 border-base-100 hover:border-base-content dark:hover:border-base-content opacity-75 hover:opacity-100"><Link href="/about">About</Link></li>
-                        <li className="flex-1 border-b-2 border-base-100 hover:border-base-content dark:hover:border-base-content opacity-75 hover:opacity-100"><Link href="/experiences">Experiences</Link></li>
-                        <li className="flex-1 border-b-2 border-base-100 hover:border-base-content dark:hover:border-base-content opacity-75 hover:opacity-100"><Link href="/projects">Projects</Link></li>
-                        <li className="flex-1 border-b-2 border-base-100 hover:border-base-content dark:hover:border-base-content opacity-75 hover:opacity-100"><Link href="/contact">Contact</Link></li>
-                        <li className="flex-1 border-b-2 border-base-100 hover:border-base-content dark:hover:border-base-content opacity-75 hover:opacity-100"><Link href="/">Home</Link></li>
+                        {navlinks.map(link => (
+                            <li key={link.id} className={clsx(
+                                "flex-1 border-b-2 border-base-100 hover:border-base-content dark:hover:border-base-content opacity-75 hover:opacity-100",
+                                {
+                                    'border-base-content opacity-100': pathname === link.href
+                                }
+                            )}>
+                                <Link href={link.href}>{link.name}</Link>
+                            </li>
+                        ))}
                     </ul>
                     <div className="flex flex-row items-center justify-center gap-4">
                         <a href="https://github.com/rishavroy97" target="_blank" rel="noopener noreferrer" title="Github">

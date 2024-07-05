@@ -1,17 +1,27 @@
-import AboutTab from "./AboutTab";
-import ContactTab from "./ContactTab";
-import ExperienceTab from "./ExperienceTab";
-import HomeTab from "./HomeTab";
-import ProjectsTab from "./ProjectsTab";
+'use client';
+
+import { navlinks } from "@/app/lib/navlinks";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import clsx from "clsx";
 
 const NavList = () => {
+    const pathname = usePathname();
+    console.log(pathname);
     return (
         <>
-            <AboutTab />
-            <ExperienceTab />
-            <ProjectsTab />
-            <ContactTab />
-            <HomeTab />
+            {
+                navlinks.map(link => (
+                    <Link key={link.id} href={link.href}>
+                        <span className={clsx(
+                            'btn btn-ghost',
+                            {
+                                'btn-active': pathname === link.href
+                            }
+                        )}>{link.name}</span>
+                    </Link>
+                ))
+            }
         </>
     )
 }
