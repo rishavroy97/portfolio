@@ -12,8 +12,9 @@ import bootstrap from "@/public/icons/bootstrap.svg";
 import css from "@/public/icons/css.png";
 import django from "@/public/icons/django.svg";
 import flask from "@/public/icons/flask.webp";
+import fastApi from "@/public/icons/fast-api.png";
 import graphql from "@/public/icons/graphQL.png";
-import huggingFace from '@/public/icons/huggingface.svg';
+import huggingFace from "@/public/icons/huggingface.svg";
 import langchainDark from "@/public/icons/LangChain.avif";
 import langchain from "@/public/icons/LangChain.png";
 import matplotlib from "@/public/icons/matplotlib.svg";
@@ -24,9 +25,9 @@ import numpy from "@/public/icons/numpy.svg";
 import react from "@/public/icons/react.svg";
 import sass from "@/public/icons/sass.svg";
 import sklearn from "@/public/icons/sklearn.ico";
+import spark from "@/public/icons/spark.png";
 import spring from "@/public/icons/spring.svg";
 import tailwind from "@/public/icons/tailwindcss.svg";
-
 
 // Tools
 import bash from "@/public/icons/bash.png";
@@ -36,155 +37,201 @@ import jenkins from "@/public/icons/jenkins.ico";
 import jira from "@/public/icons/jira.svg";
 import linux from "@/public/icons/linux.png";
 
-
 // Databases
 import mongo from "@/public/icons/mongodb.svg";
 import mysql from "@/public/icons/mysql.png";
 import pandas from "@/public/icons/pandas.svg";
 import postgres from "@/public/icons/postgresql.svg";
 
-
-export const languages = [{
+export const languages = [
+  {
     id: 1,
-    value: 'C/C++',
-    img: cpp
-}, {
+    value: "C/C++",
+    img: cpp,
+  },
+  {
     id: 2,
-    value: 'Python',
-    img: python
-}, {
+    value: "Python",
+    img: python,
+  },
+  {
     id: 3,
-    value: 'Java',
-    img: java
-}, {
+    value: "Java",
+    img: java,
+  },
+  {
     id: 4,
-    value: 'Javascript',
-    img: js
-}, {
+    value: "Javascript",
+    img: js,
+  },
+  {
     id: 5,
-    value: 'Typescript',
-    img: ts
-}, {
+    value: "Typescript",
+    img: ts,
+  },
+  {
     id: 6,
-    value: 'HTML',
-    img: html
-}];
+    value: "HTML",
+    img: html,
+  },
+];
 
-export const frameworks = [{
+export const frameworks = [
+  {
     id: 1,
-    value: 'CSS',
-    img: css
-}, {
+    value: "CSS",
+    img: css,
+  },
+  {
     id: 2,
     value: "Bootstrap",
-    img: bootstrap
-}, {
+    img: bootstrap,
+  },
+  {
     id: 3,
-    value: 'Tailwind',
-    img: tailwind
-}, {
+    value: "Tailwind CSS",
+    img: tailwind,
+  },
+  {
     id: 4,
     value: "Sass",
-    img: sass
-}, {
+    img: sass,
+  },
+  {
     id: 5,
-    value: 'ReactJS',
-    img: react
-}, {
+    value: "ReactJS",
+    img: react,
+  },
+  {
     id: 6,
-    value: 'Next JS',
-    img: nextjs
-}, {
+    value: "Next JS",
+    img: nextjs,
+  },
+  {
     id: 7,
-    value: 'Angular',
-    img: angular
-}, {
+    value: "Angular",
+    img: angular,
+  },
+  {
     id: 8,
     value: "Ngrx",
-    img: ngrx
-}, {
+    img: ngrx,
+  },
+  {
     id: 9,
     value: "NodeJS",
-    img: nodejs
-}, {
+    img: nodejs,
+  },
+  {
     id: 10,
     value: "Flask",
-    img: flask
-}, {
+    img: flask,
+  },
+  {
     id: 11,
+    value: "Fast API",
+    img: fastApi,
+  },
+  {
+    id: 12,
     value: "Django",
     img: django
-}, {
+  },
+  {
     id: 12,
+    value: "Apache Spark",
+    img: spark,
+  },
+  {
+    id: 13,
     value: "Spring",
-    img: spring
-}, {
-    id: 13,
-    value: "GraphQL",
-    img: graphql
-}, {
-    id: 13,
-    value: "Numpy",
-    img: numpy
-}, {
+    img: spring,
+  },
+  {
     id: 14,
-    value: "Matplotlib",
-    img: matplotlib
-}, {
+    value: "GraphQL",
+    img: graphql,
+  },
+  {
     id: 15,
-    value: "Scikit-Learn",
-    img: sklearn
-}, {
+    value: "Numpy",
+    img: numpy,
+  },
+  {
     id: 16,
-    value: "HuggingFace",
-    img: huggingFace
-}, {
+    value: "Matplotlib",
+    img: matplotlib,
+  },
+  {
     id: 17,
+    value: "Scikit-Learn",
+    img: sklearn,
+  },
+  {
+    id: 18,
+    value: "HuggingFace",
+    img: huggingFace,
+  },
+  {
+    id: 19,
     value: "LangChain",
     img: langchain,
-    dark: langchainDark
-}];
+    dark: langchainDark,
+  },
+];
 
-export const tools = [{
+export const tools = [
+  {
     id: 1,
-    value: 'Bash',
-    img: bash
-}, {
+    value: "Bash",
+    img: bash,
+  },
+  {
     id: 2,
-    value: 'Linux',
-    img: linux
-}, {
+    value: "Linux",
+    img: linux,
+  },
+  {
     id: 3,
-    value: 'Docker',
-    img: docker
-}, {
+    value: "Docker",
+    img: docker,
+  },
+  {
     id: 4,
-    value: 'Git',
-    img: git
-}, {
+    value: "Git",
+    img: git,
+  },
+  {
     id: 5,
-    value: 'Jira',
-    img: jira
-}, {
+    value: "Jira",
+    img: jira,
+  },
+  {
     id: 6,
-    value: 'Jenkins',
-    img: jenkins
-}];
+    value: "Jenkins",
+    img: jenkins,
+  },
+];
 
-export const databases = [{
+export const databases = [
+  {
     id: 1,
-    value: 'MongoDB',
-    img: mongo
-}, {
+    value: "MongoDB",
+    img: mongo,
+  },
+  {
     id: 2,
-    value: 'MySQL',
-    img: mysql
-}, {
+    value: "MySQL",
+    img: mysql,
+  },
+  {
     id: 3,
-    value: 'Pandas',
-    img: pandas
-}, {
+    value: "Pandas",
+    img: pandas,
+  },
+  {
     id: 4,
-    value: 'PostgreSQL',
-    img: postgres
-}];
+    value: "PostgreSQL",
+    img: postgres,
+  },
+];
