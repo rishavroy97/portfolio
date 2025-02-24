@@ -30,6 +30,7 @@ import spring from "@/public/icons/spring.svg";
 import tailwind from "@/public/icons/tailwindcss.svg";
 
 // Tools
+import aws from "@/public/icons/aws.webp";
 import bash from "@/public/icons/bash.png";
 import docker from "@/public/icons/docker.webp";
 import git from "@/public/icons/git.svg";
@@ -183,31 +184,36 @@ export const frameworks = [
 export const tools = [
   {
     id: 1,
+    value: "AWS",
+    img: aws
+  },
+  {
+    id: 2,
     value: "Bash",
     img: bash,
   },
   {
-    id: 2,
+    id: 3,
     value: "Linux",
     img: linux,
   },
   {
-    id: 3,
+    id: 4,
     value: "Docker",
     img: docker,
   },
   {
-    id: 4,
+    id: 5,
     value: "Git",
     img: git,
   },
   {
-    id: 5,
+    id: 6,
     value: "Jira",
     img: jira,
   },
   {
-    id: 6,
+    id: 7,
     value: "Jenkins",
     img: jenkins,
   },

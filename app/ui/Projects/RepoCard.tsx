@@ -1,17 +1,10 @@
 import Image from "next/image";
-import ai from "@/public/projects/ai.jpg";
-import cms from "@/public/projects/cms.jpg";
-import htmlCode from "@/public/projects/html-code.jpg";
 
 const RepoCard = ({ repo }: { repo: any }) => {
     return (
-        <div className="card w-56 h-256 lg:w-96 bg-base-100 shadow-xl dark:bg-primary dark:text-base-100 dark:shadow-neutral-500 dark:shadow-md">
+        <div className="card h-full lg:w-96 bg-base-100 shadow-xl dark:bg-base-300 dark:text-base-content dark:shadow-primary-content dark:shadow-lg">
             <figure>
-                {repo.stack.includes('Python') ?
-                    <Image src={ai} alt="AI" quality={50} height={320} /> : (repo.stack.includes('C++') ?
-                        <Image src={cms} alt="Compilers" quality={50} height={320} /> :
-                        <Image src={htmlCode} alt="Full-stack" quality={50} height={320} />
-                    )}
+                <Image src={repo.image} alt={repo.name} quality={50} height={320} width={500}/>
             </figure>
             <div className="card-body flex flex-col gap-4">
                 <h2 className="card-title">
@@ -21,7 +14,7 @@ const RepoCard = ({ repo }: { repo: any }) => {
                     {repo.stack
                         .map((lang: string, i: number) => ({ name: lang, id: i }))
                         .map((language: any) =>
-                            <div key={language.id} className="badge badge-secondary dark:badge-neutral">{language.name}</div>
+                            <div key={language.id} className="badge badge-secondary dark:badge-primary">{language.name}</div>
                         )}
                 </div>
                 <p>{repo.description}</p>

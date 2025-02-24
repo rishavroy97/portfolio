@@ -1,8 +1,8 @@
 export const navlinks = [
     {
         id: 1,
-        name: 'About',
-        href: '/about'
+        name: 'Skills',
+        href: '/skills'
     }, {
         id: 2,
         name: 'Experiences',
